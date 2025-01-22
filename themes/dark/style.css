@@ -19,7 +19,7 @@ body {
 }
 
 h1 {
-    color:#fff;
+    color: #fff;
 }
 
 button,
@@ -32,7 +32,8 @@ button,
     border-width: 2px;
 }
 
-button,.btn:hover {
+button,
+.btn:hover {
     color: #fff !important;
     background-color: #666;
     border-color: #fff;
@@ -42,6 +43,7 @@ button,.btn:hover {
 a {
     text-decoration: none;
 }
+
 .img-fluid {
     filter: grayscale(1);
 }
