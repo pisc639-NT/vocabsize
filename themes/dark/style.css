@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+
+* {
+    color: #fff !important;
+    border-width: 2px !important;
+    font-family: 'Comfortaa', 'Kanit', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+body {
+    cursor: url(http://www.javascriptkit.com/dhtmltutors/cursor-hand.gif), auto;
+}
+
+button,
+.noty_body,
+.header-nav {
+    background-color: #444;
+}
+
+.img-fluid {
+    filter: grayscale(1);
+}
+
+.txt_input {
+    background-color: #222 !important;
+    color: #fff;
+}
