@@ -30,10 +30,18 @@ button,
     background-color: #444;
     border-color: #fff;
     border-width: 2px;
+    outline: 0 !important;
 }
 
 button,
 .btn:hover {
+    color: #fff !important;
+    background-color: #666;
+    border-color: #fff;
+    border-width: 2px;
+}
+button,
+.btn:active {
     color: #fff !important;
     background-color: #666;
     border-color: #fff;
