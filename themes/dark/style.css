@@ -13,6 +13,11 @@ body {
     cursor: url(http://www.javascriptkit.com/dhtmltutors/cursor-hand.gif), auto;
 }
 
+.bg {
+    background-image: none;
+    background-color: #000;
+}
+
 button,
 .noty_body,
 .header-nav {
