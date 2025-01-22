@@ -32,6 +32,16 @@ button,
     border-width: 2px;
 }
 
+button,.btn:hover {
+    color: #fff !important;
+    background-color: #666;
+    border-color: #fff;
+    border-width: 2px;
+}
+
+a {
+    text-decoration: none;
+}
 .img-fluid {
     filter: grayscale(1);
 }
