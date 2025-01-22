@@ -20,8 +20,12 @@ body {
 
 button,
 .noty_body,
-.header-nav {
+.header-nav,
+.btn {
+    color: #fff !important;
     background-color: #444;
+    border-color: #fff;
+    border-width: 2px;
 }
 
 .img-fluid {
