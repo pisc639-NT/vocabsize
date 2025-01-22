@@ -18,6 +18,10 @@ body {
     background-color: #000;
 }
 
+h1 {
+    color:#fff;
+}
+
 button,
 .noty_body,
 .header-nav,
