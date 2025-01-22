@@ -1,5 +1,6 @@
 document.querySelectorAll('div.row.mt-100>div>*').forEach(el=>el&&el.remove());
-document.querySelectorAll('body > div.container-fluid > div > div.col.d-none.d-md-block > div.row.header-nav.pd-10 > div.col-4.d-flex.justify-content-start.align-items-center > a > img').forEach(el=>el&&el.remove());
+document.querySelectorAll("div.col-4>a>img").forEach(el=>el&&el.remove());
+document.querySelectorAll("div.col-4>a").forEach(el=>el.innerHTML="VocabSize");
 document.querySelectorAll('div.row.mt-100>div').forEach(e=>e.insertAdjacentHTML('afterbegin','<h1>VocabSize</h1>'));
 (el=>el&&el.remove())(document.querySelector('body>div>div:nth-child(3)>div>div>div:nth-child(3)'));
 (el=>el&&el.remove())(document.querySelector('body>div>div:nth-child(3)>div>div>div:nth-child(2)'));
