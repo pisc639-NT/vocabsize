@@ -5,7 +5,7 @@ d.querySelectorAll('div.row.mt-100>div').forEach(e=>e.insertAdjacentHTML('afterb
 
 // d.querySelectorAll("div.col-4>a>img").forEach(e=>e&&e.remove());
 // d.querySelectorAll("div.col-4>a").forEach(e=>e.innerText="VocabSize");
-d.querySelectorAll("[src='https://vocabsize.xeersoft.co.th/assets/images/logo_on_bar.png']").forEach(function(params){});
+d.querySelectorAll("[src='https://vocabsize.xeersoft.co.th/assets/images/logo_on_bar.png']").forEach(function(e){e.parentElement.innerText="VocabSize";e.remove();});
 d.querySelectorAll("[for='txt_email']").forEach(e=>e.innerText="\xa0\xa0\xa0\xa0Username");
 d.querySelectorAll("[for='txt_password']").forEach(e=>e.innerText="\xa0\xa0\xa0\xa0Password");
 
