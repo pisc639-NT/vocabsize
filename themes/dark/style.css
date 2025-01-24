@@ -62,7 +62,7 @@ a {
     color: #fff;
 }
 
-.container-fluid {
+body>div>.container-fluid {
     background-color: #000;
 }
 
