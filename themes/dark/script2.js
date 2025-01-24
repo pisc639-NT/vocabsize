@@ -6,7 +6,7 @@ let dsaHide=(q=>dsaEach(q,e=>e.style.display="None"));
 let dsaText=((q,t)=>dsaEach(q,e=>e.innerText=t));
 let dsaAdd=((q,p,h)=>dsaEach(q,e=>e.insertAdjacentHTML(p,h)));
 let dsaAttr=((q,k,v)=>dsaEach(q,e=>e.setAttribute(k,v)));
-let dsaUnClick=(q=>dsaEach(q,e=>getEventListeners(e).click.forEach(l=>e.removeEventListener("click",l.listener))));
+// let dsaUnClick=(q=>dsaEach(q,e=>getEventListeners(e).click.forEach(l=>e.removeEventListener("click",l.listener))));
 
 // dsa('div.row.mt-100>div>*').forEach(e=>e&&e.remove());
 dsaHide('div.row.mt-100>div>*')
@@ -34,8 +34,9 @@ dsaHide("[href='https://vocabsize-legacy.xeersoft.co.th']")
 dsaEach(".txt_input",function(e){let event=new Event('change');let autofillValue=e.value;e.value="";e.dispatchEvent(event);e.value=autofillValue;e.dispatchEvent(event);});
 dsaEach(".btn_listen_word1,.btn_stop_word1",e=>e.classList.remove("span_hidden"));
 
-dsaUnClick(".memu-img")
-dsaEach(".menu-img",e=>e.addEventListener(p=>dsaAttr("#mySidenav,#sideNavMobile","style","width:300px")))
+// dsaUnClick(".memu-img")
+dsaEach(".menu-img",e=>e.addEventListener(function(){setTimeout(()=>{dsaAttr("#mySidenav,#sideNavMobile","style","width:300px")
+},100);}))
 dsaEach("img[src$='btn_speech.png']",function(e){e.src="https://raw.githubusercontent.com/pisc639-NT/vocabsize/refs/heads/main/themes/images/icon/Settings.svg";e.width="30"})
 
 fetch('https://raw.githubusercontent.com/pisc639-NT/vocabsize/refs/heads/main/themes/dark/style.css').then(x=>x.text()).then(x=>d.head.insertAdjacentHTML('beforeend',`<style>${x}</style>">`));
