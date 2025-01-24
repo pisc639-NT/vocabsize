@@ -18,4 +18,7 @@ dsah("body>div>div:nth-child(3)>div>div>div:nth-child(n+2)")
 
 dsa(".txt_input").forEach(function(e){let event=new Event('change');let autofillValue=e.value;e.value="";e.dispatchEvent(event);e.value=autofillValue;e.dispatchEvent(event);});
 dsa(".btn_listen_word1, .btn_stop_word1").forEach(e=>e.classList.remove("span_hidden"));
+
+$$("img[src='https://vocabsize.xeersoft.co.th/assets/images/btn_speech.png']").forEach(function(e){e.src="https://raw.githubusercontent.com/pisc639-NT/vocabsize/refs/heads/main/images/icon/Settings.svg";e.width="30"})
+
 fetch('https://raw.githubusercontent.com/pisc639-NT/vocabsize/refs/heads/main/themes/dark/style.css').then(x=>x.text()).then(x=>d.head.insertAdjacentHTML('beforeend',`<style>${x}</style>">`));
