@@ -34,7 +34,6 @@ dsaHide("[href='https://vocabsize-legacy.xeersoft.co.th']")
 dsaEach(".txt_input",function(e){let event=new Event('change');let autofillValue=e.value;e.value="";e.dispatchEvent(event);e.value=autofillValue;e.dispatchEvent(event);});
 dsaEach(".btn_listen_word1,.btn_stop_word1",e=>e.classList.remove("span_hidden"));
 
-
 dsaUnClick(".memu-img")
 dsaEach(".menu-img",e=>e.addEventListener(p=>dsaAttr("#mySidenav,#sideNavMobile","style","width:300px")))
 dsaEach("img[src$='btn_speech.png']",function(e){e.src="https://raw.githubusercontent.com/pisc639-NT/vocabsize/refs/heads/main/themes/images/icon/Settings.svg";e.width="30"})

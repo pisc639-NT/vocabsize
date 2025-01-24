@@ -61,3 +61,11 @@ a {
     background-color: #222 !important;
     color: #fff;
 }
+
+.container-fluid {
+    background-color: #000;
+}
+
+.container-fluid>*>.row>.col-9>.pt-10,.mobile-screen>.row>.col-12>.pt-10 {
+    background-color: #444;
+}
