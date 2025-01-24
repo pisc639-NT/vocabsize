@@ -69,3 +69,7 @@ body>div>.container-fluid {
 .container-fluid>*>.row>*>.pt-10 {
     background-color: #444 !important;
 }
+
+.container-fluid>*>.row>*>.pt-10>.container-fluid {
+    background-color: #222 !important;
+}
