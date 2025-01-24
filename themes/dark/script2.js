@@ -1,7 +1,7 @@
 let d=document;
 let ds=(e=>d.querySelector(e));
 let dsa=(e=>d.querySelectorAll(e));
-let dsah=(e=>e.$$(e).forEach(e=>e.style.display="None"));
+let dsah=(e=>dsa(e).forEach(e=>e.style.display="None"));
 
 // dsa('div.row.mt-100>div>*').forEach(e=>e&&e.remove());
 dsah('div.row.mt-100>div>*')
@@ -13,7 +13,8 @@ dsa("[src='https://vocabsize.xeersoft.co.th/assets/images/logo_on_bar.png']").fo
 dsa("[for='txt_email']").forEach(e=>e.innerText="\xa0\xa0\xa0\xa0Username");
 dsa("[for='txt_password']").forEach(e=>e.innerText="\xa0\xa0\xa0\xa0Password");
 
-dsa("body>div>div:nth-child(3)>div>div>div:nth-child(n+2)").forEach((e=>e&&e.remove()));
+// dsa("body>div>div:nth-child(3)>div>div>div:nth-child(n+2)").forEach((e=>e&&e.remove()));
+dsah("body>div>div:nth-child(3)>div>div>div:nth-child(n+2)")
 
 dsa(".txt_input").forEach(function(e){let event=new Event('change');let autofillValue=e.value;e.value="";e.dispatchEvent(event);e.value=autofillValue;e.dispatchEvent(event);});
 dsa(".btn_listen_word1, .btn_stop_word1").forEach(e=>e.classList.remove("span_hidden"));
