@@ -66,6 +66,6 @@ a {
     background-color: #000;
 }
 
-.container-fluid>*>.row>.col-9>.pt-10,.mobile-screen>.row>.col-12>.pt-10 {
+.container-fluid>*>.row>*>.pt-10 {
     background-color: #444;
 }
