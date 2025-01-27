@@ -6,7 +6,7 @@ let dsaHide=(q=>dsaEach(q,e=>e.style.display="None"));
 let dsaText=((q,t)=>dsaEach(q,e=>e.innerText=t));
 let dsaAdd=((q,p,h)=>dsaEach(q,e=>e.insertAdjacentHTML(p,h)));
 let dsaAttr=((q,k,v)=>dsaEach(q,e=>e.setAttribute(k,v)));
-let dsaUnClick=(q=>dsaEach(q,e=>getEventListeners(e).click.forEach(l=>e.removeEventListener("click",l.listener))));
+// let dsaUnClick=(q=>dsaEach(q,e=>getEventListeners(e).click.forEach(l=>e.removeEventListener("click",l.listener))));
 let dsaReImg=((q,s,w)=>dsaEach(q,function(e){e.src=s;e.width=w}))
 
 // dsa('div.row.mt-100>div>*').forEach(e=>e&&e.remove());
@@ -35,7 +35,7 @@ dsaHide("[href='https://vocabsize-legacy.xeersoft.co.th']")
 dsaEach(".txt_input",function(e){let event=new Event('chaange');let autofillValue=e.value;e.value="";e.dispatchEvent(event);e.value=autofillValue;e.dispatchEvent(event);});
 dsaEach(".btn_listen_word1,.btn_stop_word1",e=>e.classList.remove("span_hidden"));
 
-dsaUnClick(".memu-img")
+// dsaUnClick(".memu-img")
 dsaEach(".memu-img",e=>e.addEventListener("click",function(){dsaAttr("#mySidenav,#sideNavMobile","style","width:300px");}))
 dsaReImg("img[src*='btn_speech.png']","https://raw.githubusercontent.com/pisc639-NT/vocabsize/refs/heads/main/themes/images/icon/Settings.svg","30")
 dsaReImg("img[src*='ico_humburger.png']","https://raw.githubusercontent.com/pisc639-NT/vocabsize/refs/heads/main/themes/images/icon/Menu.svg","30")
