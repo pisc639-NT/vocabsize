@@ -73,3 +73,7 @@ body>div>.container-fluid {
 .container-fluid>*>.row>*>.pt-10>.container-fluid {
     background-color: #222 !important;
 }
+
+[class="col mg-10"] {
+    background-color: #222 !important;
+}

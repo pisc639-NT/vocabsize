@@ -1,1 +1,1 @@
-fetch(`https://raw.githubusercontent.com/pisc639-NT/vocabsize/refs/heads/main/themes/dark/script2.js?cachebust=${Date.now()}`).then(r=>r.text()).then(r=>eval(r));
+fetch(`https://raw.githubusercontent.com/pisc639-NT/vocabsize/refs/heads/main/themes/dark/script2.js?cachebust=${Math.random()}`).then(r=>r.text()).then(r=>eval(r));
