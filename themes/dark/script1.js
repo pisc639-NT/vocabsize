@@ -15,4 +15,4 @@ document.querySelectorAll(".txt_input").forEach(function(e){let event=new Event(
 document.querySelectorAll("[for='txt_email']").forEach(e=>e.innerText="\xa0\xa0\xa0\xa0Username")
 document.querySelectorAll("[for='txt_password']").forEach(e=>e.innerText="\xa0\xa0\xa0\xa0Password")
 
-fetch('https://raw.githubusercontent.com/pisc639-NT/vocabsize/refs/heads/main/themes/dark/style.css').then(x=>x.text()).then(x=>document.head.insertAdjacentHTML('beforeend', `<style>${x}</style>">`));
+fetch(`https://raw.githubusercontent.com/pisc639-NT/vocabsize/refs/heads/main/themes/dark/style.css?cachebust=${Date.now()}`).then(x=>x.text()).then(x=>document.head.insertAdjacentHTML('beforeend', `<style>${x}</style>">`));
