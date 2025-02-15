@@ -78,9 +78,10 @@ body>div:nth-child(2)>div {
     background-color: #222 !important;
 }
 
-.row > .mg-10,
-.mr-10,
+.row>.mg-10,
+.row>.mr-10,
 #doughnut,
-.skill {
+.skill,
+.skill-mobile {
     background-color: #222 !important;
 }
