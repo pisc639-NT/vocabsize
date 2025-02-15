@@ -83,6 +83,7 @@ body>div:nth-child(2)>div {
 #doughnut,
 .skill,
 .skill-mobile,
-.skill>.outer>.inner {
+.skill>.outer>.inner,
+.skill-mobile>.outer-mobile>.inner-mobile {
     background-color: #222 !important;
 }
