@@ -37,7 +37,7 @@ dsaEach(".btn_listen_word1,.btn_stop_word1",e=>e.classList.remove("span_hidden")
 
 // dsaUnClick(".memu-img")
 dsaEach(".memu-img",e=>e.addEventListener("click",function(){dsaAttr("#mySidenav,#sideNavMobile","style","width:300px");}))
-dsaReImg("img[src*='btn_speech.png']","https://raw.githubusercontent.com/pisc639-NT/vocabsize/refs/heads/main/themes/images/icon/Settings.svg","30")
-dsaReImg("img[src*='ico_humburger.png']","https://raw.githubusercontent.com/pisc639-NT/vocabsize/refs/heads/main/themes/images/icon/Menu.svg","30")
+dsaReImg("img[src*='btn_speech.png']",`https://raw.githubusercontent.com/pisc639-NT/vocabsize/refs/heads/main/themes/images/icon/Settings.svg?cachebust=${Date.now()}`,"30")
+dsaReImg("img[src*='ico_humburger.png']",`https://raw.githubusercontent.com/pisc639-NT/vocabsize/refs/heads/main/themes/images/icon/Menu.svg?cachebust=${Date.now()}`,"30")
 
-fetch('https://raw.githubusercontent.com/pisc639-NT/vocabsize/refs/heads/main/themes/dark/style.css').then(x=>x.text()).then(x=>d.head.insertAdjacentHTML('beforeend',`<style>${x}</style>">`));
+fetch(`https://raw.githubusercontent.com/pisc639-NT/vocabsize/refs/heads/main/themes/dark/style.css?cachebust=${Date.now()}`).then(x=>x.text()).then(x=>d.head.insertAdjacentHTML('beforeend',`<style>${x}</style>">`));
