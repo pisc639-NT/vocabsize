@@ -63,7 +63,7 @@ a {
 }
 
 body>div>.container-fluid, body > div:nth-child(2) > div {
-    background-color: #000;
+    background-color: #000 !important;
 }
 
 .container-fluid>*>.row>*>.pt-10 {
