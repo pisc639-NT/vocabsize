@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
 
 * {
-    color: #fff !important;
     border-width: 2px !important;
     font-family: 'Comfortaa', 'Kanit', sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
+}
+
+*:not(option) {
+    color: #fff !important;
 }
 
 * {
@@ -62,7 +65,8 @@ a {
     color: #fff;
 }
 
-body>div>.container-fluid, body > div:nth-child(2) > div {
+body>div>.container-fluid,
+body>div:nth-child(2)>div {
     background-color: #000 !important;
 }
 
@@ -74,6 +78,8 @@ body>div>.container-fluid, body > div:nth-child(2) > div {
     background-color: #222 !important;
 }
 
-.mg-10, .mr-10, #doughnut{
+.mg-10,
+.mr-10,
+#doughnut {
     background-color: #222 !important;
 }
