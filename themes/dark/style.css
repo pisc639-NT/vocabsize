@@ -74,6 +74,6 @@ body>div>.container-fluid, body > div:nth-child(2) > div {
     background-color: #222 !important;
 }
 
-[class="col mg-10"] {
+.mg-10, .mr-10{
     background-color: #222 !important;
 }
